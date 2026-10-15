@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive: login with valid account</description>
+   <name>TC01_Login_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>95ac04ca-57e3-4887-a3e4-237096a318dd</testCaseGuid>
+</TestCaseEntity>

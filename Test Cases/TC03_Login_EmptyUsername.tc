@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative: login with empty username</description>
+   <name>TC03_Login_EmptyUsername</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c5d67a7-d7ec-4547-9008-fcdf2ddf0896</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,54 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_SwagLabs,,,,15-10-2026 23:36:18,15-10-2026 23:37:21,1m - 2.872s,PASSED
+,,,,,,,
+Test Cases/TC01_Login_Success,,Positive: login with valid account,,15-10-2026 23:36:18,15-10-2026 23:36:35,17.440s,PASSED
+Start listener action : setCapabilities,,,,15-10-2026 23:36:18,15-10-2026 23:36:18,0.013s,PASSED
+"apkPath = getProjectDir() + ""/Data Files/apk/APK-sauce-labs.2.7.1.apk""",,,,15-10-2026 23:36:18,15-10-2026 23:36:18,0.004s,PASSED
+"startApplication(apkPath, false)",,,,15-10-2026 23:36:18,15-10-2026 23:36:28,9.965s,PASSED
+"waitForElementPresent(findTestObject(""Login/btn_login""), 45)",,,,15-10-2026 23:36:28,15-10-2026 23:36:28,0.161s,PASSED
+"setText(findTestObject(""Login/txt_username""), ""standard_user"", 10)",,,,15-10-2026 23:36:28,15-10-2026 23:36:31,2.499s,PASSED
+"setText(findTestObject(""Login/txt_password""), ""secret_sauce"", 10)",,,,15-10-2026 23:36:31,15-10-2026 23:36:32,1.924s,PASSED
+"tap(findTestObject(""Login/btn_login""), 10)",,,,15-10-2026 23:36:32,15-10-2026 23:36:33,0.700s,PASSED
+"waitForElementPresent(findTestObject(""Products/screen_products""), 20)",,,,15-10-2026 23:36:33,15-10-2026 23:36:34,1.086s,PASSED
+"verifyElementExist(findTestObject(""Products/screen_products""), 10)",,,,15-10-2026 23:36:34,15-10-2026 23:36:34,0.093s,PASSED
+Start listener action : closeApp,,,,15-10-2026 23:36:34,15-10-2026 23:36:35,0.915s,PASSED
+,,,,,,,
+Test Cases/TC02_Login_WrongPassword,,Negative: login with wrong password,,15-10-2026 23:36:35,15-10-2026 23:36:50,15.231s,PASSED
+Start listener action : setCapabilities,,,,15-10-2026 23:36:35,15-10-2026 23:36:35,0.001s,PASSED
+"apkPath = getProjectDir() + ""/Data Files/apk/APK-sauce-labs.2.7.1.apk""",,,,15-10-2026 23:36:35,15-10-2026 23:36:35,0.001s,PASSED
+"startApplication(apkPath, false)",,,,15-10-2026 23:36:35,15-10-2026 23:36:43,7.572s,PASSED
+"waitForElementPresent(findTestObject(""Login/btn_login""), 45)",,,,15-10-2026 23:36:43,15-10-2026 23:36:43,0.087s,PASSED
+"setText(findTestObject(""Login/txt_username""), ""standard_user"", 10)",,,,15-10-2026 23:36:43,15-10-2026 23:36:45,2.481s,PASSED
+"setText(findTestObject(""Login/txt_password""), ""wrong_password"", 10)",,,,15-10-2026 23:36:45,15-10-2026 23:36:48,2.525s,PASSED
+"tap(findTestObject(""Login/btn_login""), 10)",,,,15-10-2026 23:36:48,15-10-2026 23:36:49,0.703s,PASSED
+"waitForElementPresent(findTestObject(""Login/lbl_errorMessage""), 10)",,,,15-10-2026 23:36:49,15-10-2026 23:36:50,0.862s,PASSED
+"verifyElementText(findTestObject(""Login/lbl_errorMessage""), ""Username and password do not match any user in this service."")",,,,15-10-2026 23:36:50,15-10-2026 23:36:50,0.094s,PASSED
+Start listener action : closeApp,,,,15-10-2026 23:36:50,15-10-2026 23:36:50,0.863s,PASSED
+,,,,,,,
+Test Cases/TC03_Login_EmptyUsername,,Negative: login with empty username,,15-10-2026 23:36:50,15-10-2026 23:37:03,12.706s,PASSED
+Start listener action : setCapabilities,,,,15-10-2026 23:36:50,15-10-2026 23:36:50,0.001s,PASSED
+"apkPath = getProjectDir() + ""/Data Files/apk/APK-sauce-labs.2.7.1.apk""",,,,15-10-2026 23:36:51,15-10-2026 23:36:51,0.001s,PASSED
+"startApplication(apkPath, false)",,,,15-10-2026 23:36:51,15-10-2026 23:36:58,7.635s,PASSED
+"waitForElementPresent(findTestObject(""Login/btn_login""), 45)",,,,15-10-2026 23:36:58,15-10-2026 23:36:58,0.079s,PASSED
+"setText(findTestObject(""Login/txt_password""), ""secret_sauce"", 10)",,,,15-10-2026 23:36:58,15-10-2026 23:37:01,2.388s,PASSED
+"tap(findTestObject(""Login/btn_login""), 10)",,,,15-10-2026 23:37:01,15-10-2026 23:37:01,0.720s,PASSED
+"waitForElementPresent(findTestObject(""Login/lbl_errorMessage""), 10)",,,,15-10-2026 23:37:01,15-10-2026 23:37:02,0.864s,PASSED
+"verifyElementText(findTestObject(""Login/lbl_errorMessage""), ""Username is required"")",,,,15-10-2026 23:37:02,15-10-2026 23:37:02,0.110s,PASSED
+Start listener action : closeApp,,,,15-10-2026 23:37:02,15-10-2026 23:37:03,0.868s,PASSED
+,,,,,,,
+Test Cases/TC04_Add_To_Cart,,Positive: add a product to the cart,,15-10-2026 23:37:03,15-10-2026 23:37:21,17.367s,PASSED
+Start listener action : setCapabilities,,,,15-10-2026 23:37:03,15-10-2026 23:37:03,0.001s,PASSED
+"apkPath = getProjectDir() + ""/Data Files/apk/APK-sauce-labs.2.7.1.apk""",,,,15-10-2026 23:37:03,15-10-2026 23:37:03,0.002s,PASSED
+"startApplication(apkPath, false)",,,,15-10-2026 23:37:03,15-10-2026 23:37:11,7.598s,PASSED
+"waitForElementPresent(findTestObject(""Login/btn_login""), 45)",,,,15-10-2026 23:37:11,15-10-2026 23:37:11,0.072s,PASSED
+"setText(findTestObject(""Login/txt_username""), ""standard_user"", 10)",,,,15-10-2026 23:37:11,15-10-2026 23:37:13,2.504s,PASSED
+"setText(findTestObject(""Login/txt_password""), ""secret_sauce"", 10)",,,,15-10-2026 23:37:13,15-10-2026 23:37:15,2.009s,PASSED
+"tap(findTestObject(""Login/btn_login""), 10)",,,,15-10-2026 23:37:15,15-10-2026 23:37:16,0.706s,PASSED
+"waitForElementPresent(findTestObject(""Products/screen_products""), 20)",,,,15-10-2026 23:37:16,15-10-2026 23:37:17,1.104s,PASSED
+"tap(findTestObject(""Products/btn_addToCart""), 10)",,,,15-10-2026 23:37:17,15-10-2026 23:37:18,0.355s,PASSED
+"verifyElementExist(findTestObject(""Products/btn_remove""), 10)",,,,15-10-2026 23:37:18,15-10-2026 23:37:18,0.670s,PASSED
+"verifyElementText(findTestObject(""Products/lbl_cartBadge""), ""1"")",,,,15-10-2026 23:37:18,15-10-2026 23:37:18,0.160s,PASSED
+"tap(findTestObject(""Products/btn_cart""), 10)",,,,15-10-2026 23:37:18,15-10-2026 23:37:19,0.118s,PASSED
+"waitForElementPresent(findTestObject(""Cart/lbl_cartItemName""), 10)",,,,15-10-2026 23:37:19,15-10-2026 23:37:19,0.221s,PASSED
+"verifyElementText(findTestObject(""Cart/lbl_cartItemName""), ""Sauce Labs Backpack"")",,,,15-10-2026 23:37:19,15-10-2026 23:37:20,0.880s,PASSED
+Start listener action : closeApp,,,,15-10-2026 23:37:20,15-10-2026 23:37:21,0.918s,PASSED

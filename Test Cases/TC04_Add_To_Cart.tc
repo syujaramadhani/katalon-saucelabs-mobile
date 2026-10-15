@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive: add a product to the cart</description>
+   <name>TC04_Add_To_Cart</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7a0fa00d-b30a-4602-80e3-c4d4edff5d35</testCaseGuid>
+</TestCaseEntity>
